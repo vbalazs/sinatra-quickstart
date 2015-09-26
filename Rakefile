@@ -1,7 +1,7 @@
-begin
-  require 'rspec/core/rake_task'
-  RSpec::Core::RakeTask.new(:spec)
+require './environment'
 
-  task default: :spec
-rescue LoadError
+task default: :test
+
+task :test do
+  Dir.glob('test/minitest/**/*.rb') { |f| require_relative(f) }
 end
