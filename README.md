@@ -4,7 +4,6 @@
 
 Basic template for a new Sinatra app with
   * minitest
-  * guard
   * puma
   * byebug
   * travis config
