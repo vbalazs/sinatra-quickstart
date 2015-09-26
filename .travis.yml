@@ -1,8 +1,5 @@
 language: ruby
-script: "bundle exec rake"
 rvm:
   - ruby-head
   - jruby-head
-gemfile:
-  - Gemfile
 bundler_args: --without development --deployment
