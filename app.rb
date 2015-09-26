@@ -1,8 +1,8 @@
 require 'sinatra'
-require 'application_helpers'
 
 helpers ApplicationHelpers
 
 get '/' do
-  "todo"
+  m = SinatraQuickstart::Meme.new
+  m.i_can_has_cheezburger?
 end
